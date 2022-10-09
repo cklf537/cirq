@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import './style.css';
+// import './style.scss';
 import * as response from './data';
 import AppHeader from './component/header/header.component';
 import AppLayout from './component/layout/layout.component';
