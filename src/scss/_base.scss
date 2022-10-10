@@ -1,53 +1,14 @@
-@font-face {
-    font-family: $app-font-family;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: $app-font-family;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-    font-weight: thin;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: $app-font-family;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
-    font-weight: thin;
-    font-style: italic;
-  }
+@import '../scss/variables';
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
   
 body {
     font-family: $app-font-family;
-    font-weight: $app-font-weight;
-    font-style: $app-font-style;
-    font-size: $app-font-size;
+    // font-weight: 300;    
     color: $app-text-color;
     h3,
     h2 {
       font-family: $app-font-family;
-      font-weight: 300;
     }
+    
   }
 
-  @mixin respond($breakpoint) {
-    @if ($breakpoint == medium) {
-        @media screen and (max-width: 600px) {
-            @content
-        }
-    }
-}
-
-// $colors:( 
-//   "primary" : red,
-//   "secondary": blue,
-//   "teritory": green,
-// );
-
-// @each $key, $val in $colors {
-//   .app-#{$key}-color {
-//     background-color: $val
-//   }
-// }
