@@ -1,0 +1,53 @@
+@font-face {
+    font-family: $app-font-family;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: $app-font-family;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    font-weight: thin;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: $app-font-family;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+    font-weight: thin;
+    font-style: italic;
+  }
+  
+body {
+    font-family: $app-font-family;
+    font-weight: $app-font-weight;
+    font-style: $app-font-style;
+    font-size: $app-font-size;
+    color: $app-text-color;
+    h3,
+    h2 {
+      font-family: $app-font-family;
+      font-weight: 300;
+    }
+  }
+
+  @mixin respond($breakpoint) {
+    @if ($breakpoint == medium) {
+        @media screen and (max-width: 600px) {
+            @content
+        }
+    }
+}
+
+// $colors:( 
+//   "primary" : red,
+//   "secondary": blue,
+//   "teritory": green,
+// );
+
+// @each $key, $val in $colors {
+//   .app-#{$key}-color {
+//     background-color: $val
+//   }
+// }
