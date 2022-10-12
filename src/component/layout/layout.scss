@@ -1,20 +1,95 @@
+@use "sass:map";
+@import '../../scss/variables';
+@import '../../scss/breakpoints';
+
+
 $appBorder: solid 1px #000;
 $contentPadding: 1rem 1rem;
 
-.main-body {
+.main-body{
   display: flex;
 
-  .left-content {
-    // border: $appBorder;
-    width: auto;
-    padding: $contentPadding;
+  @include xl {
+    margin: $app-viewpoer1200-margin;
   }
 
-  .right-content {
-    // border: $appBorder;
-    margin-left: auto;
-    margin-right: 0;
+  .left-content{
+    @include sm{
+      padding: 1.5rem;
+    }
+  }
+
+  .right-content{
     width: 20%;
-    padding: $contentPadding;
+    
+    @include sm{
+      display: none;
+      visibility: hidden;
+    }
+
+    @include xl {
+      display: block;
+      visibility: visible;
+    }
   }
 }
+
+
+// @include sm {
+//   .main-body {
+//     display: flex;
+
+//     .left-content {
+//       width: auto;
+//       padding: 1rem;
+//     }
+
+//     .right-content {
+//       display: block;
+//       visibility: visible;
+//       width: 20%
+//     }
+
+//     //   @if map.get($breakpoints, "xs") {
+//     //     .right-content {
+//     //       display: none;
+//     //       visibility: hidden;
+//     //     }
+//     //   }
+
+//     //   @else if map.get($breakpoints, "lg") {
+//     //     .right-content {
+//     //       display: block;
+//     //       visibility: visible;
+//     //     }
+//     //   }
+//     // }
+//   }
+// // }
+
+
+// @include sm {
+//   .main-body {
+//     display: flex;
+
+//     .left-content {
+//       width: auto;
+//       padding: 1rem;
+//     }
+
+//     .right-content {
+//       display: none;
+//       visibility: hidden;
+//       width: 20%
+//     }
+//   }
+// }
+
+// @include lg {
+//   .main-body{
+//     .right-content{
+//       display:block;
+//       visibility: visible;
+//     }
+//   }
+// } 
