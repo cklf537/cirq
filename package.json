@@ -1,5 +1,5 @@
 {
-  "homepage": "https://cklf537/github.io/cirq",
+  "homepage": "https://cklf537.github.io/cirq",
   "name": "react",
   "version": "0.0.0",
   "private": true,
@@ -9,8 +9,8 @@
     "react-dom": "^18.1.0"
   },
   "scripts": {
-    "preprocess":"npm run build",
-    "deploy": "gh-pages -d deploy",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
