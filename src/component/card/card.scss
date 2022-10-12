@@ -1,0 +1,31 @@
+// @mixin cardTheme($theme:Darkgray) {
+//     background: $theme;
+//     box-shadow: 0 0 4px rgba($color: #ccc, $alpha: 1.0);
+//     color: #ddd;
+// }
+
+// .card-container {
+//     @include cardTheme($theme: #fff)
+// }
+
+
+// $card-padding: .5rem;
+// .card-container{
+//     background-color: white;
+//     display: flex;
+    
+//     .answer-count{
+//         border-radius: 100;  
+//         padding: $card-padding; 
+//     }
+
+//     .card-title{
+//         h1,h2,h3,h4,h5,h6{
+//             font-weight: 700;
+//         }
+//     }
+//     .card-body{
+//         padding: $card-padding;
+//     }
+
+// }
