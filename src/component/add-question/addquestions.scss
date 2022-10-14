@@ -10,15 +10,3 @@
 .add-question-container{
     @include QContainer($height:50px);
 }
-
-// .btn-primary{
-//     @include variables.btnPrimary
-// }
-
-
-
-// @debug btnPrimary
-
-// .btn-primary{
-//     @include base.btnPrimary
-// }
