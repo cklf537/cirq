@@ -1,6 +1,16 @@
 $app-font-family: 'Lato', sans-serif;
 $app-primary-color: #f79256;
 $app-secondary-color: #fbd1a2;
-$app-text-color: #3e2723;
+// $app-text-color: #3e2723;
+$app-text-color: #003049ff;
 
 $app-viewpoer1200-margin: 8rem;
+
+@mixin btnPrimary {
+    background-color: #003049ff;
+    padding: 8px;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 700;
+  }

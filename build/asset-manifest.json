@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/github.io/cirq/tree/master/static/css/main.12475663.css",
-    "main.js": "/github.io/cirq/tree/master/static/js/main.a9e2d07a.js",
-    "index.html": "/github.io/cirq/tree/master/index.html",
-    "main.12475663.css.map": "/github.io/cirq/tree/master/static/css/main.12475663.css.map",
-    "main.a9e2d07a.js.map": "/github.io/cirq/tree/master/static/js/main.a9e2d07a.js.map"
+    "main.css": "/cirq/static/css/main.12475663.css",
+    "main.js": "/cirq/static/js/main.d194fee6.js",
+    "index.html": "/cirq/index.html",
+    "main.12475663.css.map": "/cirq/static/css/main.12475663.css.map",
+    "main.d194fee6.js.map": "/cirq/static/js/main.d194fee6.js.map"
   },
   "entrypoints": [
     "static/css/main.12475663.css",
-    "static/js/main.a9e2d07a.js"
+    "static/js/main.d194fee6.js"
   ]
 }

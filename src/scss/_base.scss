@@ -13,7 +13,6 @@ body {
     font-family: $app-font-family;
   }
 
-
   .material-symbols-outlined {
     font-variation-settings:
       'FILL' 0,
@@ -22,4 +21,27 @@ body {
       'opsz' 40
   }
 
+}
+
+.btn-primary {
+  background-color: #003049ff;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+$inputHolder: ("primary","secondary",'teretory');
+
+@mixin appInput($border: solid 1px #ccc, $padding: 10px, $bgColor: #fff) {
+  border: $border;
+  padding: $padding;
+  background-color: $bgColor;
+}
+
+@each $var in $inputHolder {
+  .input-#{$var}{
+    @include appInput()
+  }
 }
