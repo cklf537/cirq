@@ -9,6 +9,7 @@ const AppLayout = () => {
   return (
     <section className="main-body">
       <section className="left-content">
+        <input type="text"  />
         <AddQuestion />
         <RenderQestion />
       </section>

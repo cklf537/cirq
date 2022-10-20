@@ -1,12 +1,8 @@
 @use '../../scss/variables';
 @import '../../scss/breakpoints';
 
-
-$backgroundColor: #faedcd;
-// $fontColor: #3e2723;
-
-.app-heading {
-  background-color: $backgroundColor;
+.app-heading {  
+  background-color: variables.$app-header-bg;
   padding: 1rem;
   text-align: center;
   color: variables.$app-text-color;

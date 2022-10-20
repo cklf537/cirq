@@ -1,0 +1,64 @@
+@use "sass:math";
+@use "./variables";
+@use "./util";
+
+
+/* BUTTON */
+$elements:("button","input");
+$buttons:("main","secondary","outlined",);
+$btn-size: medium;
+$btn-main-color: white;
+$btn-secondary-color: black;
+$btn-hover-alpha: .9;
+$btn-padding: .8rem;
+$btn-border: none;
+$btn-border-radius: .3rem;
+$btn-font-weight: bold;
+
+@mixin btn-common {
+    font-size: $btn-size;
+    color: $btn-main-color;
+    padding: $btn-padding;
+    border: $btn-border;
+    border-radius: $btn-border-radius;
+    font-weight: $btn-font-weight;
+}
+
+@mixin btn-hover($type, $Color) {
+    @if $type == "main"{
+        background-color: rgba($color: $Color, $alpha: $btn-hover-alpha);
+    }@else if $type == "secondary"{
+        background-color: rgba($color: $Color, $alpha: $btn-hover-alpha);
+        color: variables.$prussian-blue;
+    }
+}
+
+@each $button in $buttons {
+    @if $button == "main" {
+        .btn-#{$button}{
+            background-color: variables.$prussian-blue;
+            @include btn-common();
+            &:hover{
+                @include btn-hover($button, variables.$prussian-blue);
+            }
+        }
+    }@else if $button == "secondary"{
+        .btn-#{$button}{
+            background-color: variables.$maximum-red;
+            @include btn-common();
+            &:hover{
+                @include btn-hover($button, variables.$maximum-red);
+            }            
+        }
+    }@else if $button == "outlined"{
+        .btn-#{$button}{
+            @include btn-common();
+            background-color: rgba(#ccc,0.0);
+            border: solid 1px variables.$prussian-blue;
+            color: variables.$prussian-blue;
+        }
+    }
+}
+
+/* BUTTON END*/
+
