@@ -1,0 +1,30 @@
+$bg-color: red;
+$border-thickness: 1px;
+$width:100px;
+$height: 100px;
+$border-Radious: 50%;
+
+@mixin badge($bc: $bg-color, $bdr: $border-thickness, $wt: $width, $ht: $height, $br: $border-Radious) {
+    display: flex;
+    background-color: $bc;
+    border: solid $bdr #000;
+    width: $wt;
+    height: $ht;
+    border-radius: $br;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin badgeContent($font-size:xx-large, $color: #ffffff, $font-weight: 700) {
+    font-size: $font-size;
+    color: $color;
+    font-weight: 700;
+}
+
+.badgeContainer{
+    @include badge(#F79256,0px,60px,60px,50%)    
+}
+
+.badgeContent{
+    @include badgeContent
+}

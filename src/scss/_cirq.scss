@@ -1,0 +1,136 @@
+@use "sass:math";
+@import "./variables";
+@import "../scss//breakpoints";
+@import "./util";
+
+
+/* BUTTON */
+$elements:("button","input");
+$buttons:("main","secondary","outlined",);
+$btn-size: medium;
+$btn-main-color: white;
+$btn-secondary-color: black;
+$btn-hover-alpha: .9;
+$btn-padding: .8rem;
+$btn-border: none;
+$btn-border-radius: .3rem;
+$btn-font-weight: bold;
+
+@mixin btn-common {
+    font-size: $btn-size;
+    color: $btn-main-color;
+    padding: $btn-padding;
+    border: $btn-border;
+    border-radius: $btn-border-radius;
+    font-weight: $btn-font-weight;
+}
+
+@mixin btn-hover($type, $Color) {
+    @if $type == "main"{
+        background-color: rgba($color: $Color, $alpha: $btn-hover-alpha);
+    }@else if $type == "secondary"{
+        background-color: rgba($color: $Color, $alpha: $btn-hover-alpha);
+        color: $prussian-blue;
+    }   
+}
+
+@each $button in $buttons {
+    @if $button == "main" {
+        .btn-#{$button}{
+            background-color: $prussian-blue;
+            @include btn-common();
+            &:hover{
+                @include btn-hover($button, $prussian-blue);
+            }
+        }
+    }@else if $button == "secondary"{
+        .btn-#{$button}{
+            background-color: $maximum-red;
+            @include btn-common();
+            &:hover{
+                @include btn-hover($button, $maximum-red);
+            }            
+        }
+    }@else if $button == "outlined"{
+        .btn-#{$button}{
+            @include btn-common();
+            background-color: rgba(#ccc,0.0);
+            border: solid 1px $prussian-blue;
+            color: $prussian-blue;
+        }
+    }
+}
+
+/* BUTTON END*/
+
+$elements:('button','input','form');
+
+// INPUT type=text
+
+@each $element in $elements {
+    $input-type:('text','radio');
+    @if $element == 'input'{
+        @each $type in $input-type {
+            @if $type == 'text' {
+                input[type=#{$type}]{
+                    font-size: medium;
+                    padding: $btn-padding 0px;
+                    border: none;
+                    border-bottom: solid 2px $prussian-blue;
+                    &:focus{
+                        outline: none;
+                        border-bottom: solid 2px $prussian-blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Headings
+
+h1{
+    @include sm {
+        padding: 0px;
+        margin: 0px;
+        font-size: 4.5rem;
+    }
+    @include xl {
+        font-size: 2.5rem;
+    }
+}
+
+h2{
+    @include sm {
+        padding: 0px;
+        margin: 0px;
+        font-size: 2rem;
+    }
+    @include xl {
+        font-size: 1.25rem;
+    }
+}
+
+// Paddings [5,10,15,20]
+
+$basePadding: 5;
+
+@while $basePadding  <= 20{
+    .g-#{$basePadding}{
+        margin: $basePadding + px;
+    }
+    .gl-#{$basePadding}{
+        margin-left: $basePadding + px;
+    }
+    .gr-#{$basePadding}{
+        margin-right: $basePadding + px;
+    }
+    .gb-#{$basePadding}{
+        margin-bottom: $basePadding + px;
+    }
+    .gt-#{$basePadding}{
+        margin-top: $basePadding + px;
+    }
+
+    $basePadding: $basePadding + 5;
+}

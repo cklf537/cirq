@@ -4,18 +4,17 @@ import { getUniqueTags } from '../../util/util';
 import './tags.scss';
 
 const TechTags = () => {
-  const tags = getUniqueTags(useContext(AppContext));
-  const handleMouseOver = (e) => {
-    console.log(e.target);
-  };
+  const {data, filterByTags} = useContext(AppContext);
+  const tags = getUniqueTags(data);
+  
   return (
     <>
       <h3>Filter by tags:</h3>
       {tags &&
         tags.map((type, i) => (
           <div
-            onMouseOver={handleMouseOver}
-            className="tec-tags"
+            onClick={filterByTags}
+            className="tec-tags gr-10 gb-10"
             key={i}
             data-id={i}
           >
