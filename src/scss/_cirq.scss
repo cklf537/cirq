@@ -1,5 +1,6 @@
 @use "sass:math";
 @import "./variables";
+@import "../scss//breakpoints";
 @import "./util";
 
 
@@ -30,7 +31,7 @@ $btn-font-weight: bold;
     }@else if $type == "secondary"{
         background-color: rgba($color: $Color, $alpha: $btn-hover-alpha);
         color: $prussian-blue;
-    }
+    }   
 }
 
 @each $button in $buttons {
@@ -73,11 +74,12 @@ $elements:('button','input','form');
             @if $type == 'text' {
                 input[type=#{$type}]{
                     font-size: medium;
-                    padding: $btn-padding;
+                    padding: $btn-padding 0px;
                     border: none;
                     border-bottom: solid 2px $prussian-blue;
                     &:focus{
-                        border: none !important;
+                        outline: none;
+                        border-bottom: solid 2px $prussian-blue;
                     }
                 }
             }
@@ -85,3 +87,50 @@ $elements:('button','input','form');
     }
 }
 
+// Headings
+
+h1{
+    @include sm {
+        padding: 0px;
+        margin: 0px;
+        font-size: 4.5rem;
+    }
+    @include xl {
+        font-size: 2.5rem;
+    }
+}
+
+h2{
+    @include sm {
+        padding: 0px;
+        margin: 0px;
+        font-size: 2rem;
+    }
+    @include xl {
+        font-size: 1.25rem;
+    }
+}
+
+// Paddings [5,10,15,20]
+
+$basePadding: 5;
+
+@while $basePadding  <= 20{
+    .g-#{$basePadding}{
+        margin: $basePadding + px;
+    }
+    .gl-#{$basePadding}{
+        margin-left: $basePadding + px;
+    }
+    .gr-#{$basePadding}{
+        margin-right: $basePadding + px;
+    }
+    .gb-#{$basePadding}{
+        margin-bottom: $basePadding + px;
+    }
+    .gt-#{$basePadding}{
+        margin-top: $basePadding + px;
+    }
+
+    $basePadding: $basePadding + 5;
+}

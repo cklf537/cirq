@@ -1,12 +1,17 @@
 @use '../../scss/variables';
 
-@mixin QContainer($height: 100px, $border: solid 1px #ccc, $display: flex, $align-item: center) {
+@mixin QContainer($border: solid 1px #ccc, $display: flex, $align-item: center) {
     display: $display;
-    border-bottom:$border;
-    height: $height;
+    // border-bottom:$border;
     align-items: $align-item;
+    // border: solid 1px #ccc;
+    justify-content: center;
 }
 
 .add-question-container{
-    @include QContainer($height:50px);
+    @include QContainer();
+    .search-box{
+        box-sizing: border-box;
+        width:35rem
+    }
 }

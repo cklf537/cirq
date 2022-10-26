@@ -6,14 +6,13 @@ import QuestionCard from '../card/card.component';
 import Badge from '../badge/badge.component';
 
 const RenderQestion = (props) => {
-  const questions = useContext(AppContext);
-  // console.log(questions);
+  const {data} = useContext(AppContext);
   return (
     <>
     {/* <QuestionCard /> */}
       <form>
-        {questions &&
-          questions.map(({ question, ans, imp }, i) => (
+        {data &&
+          data.map(({ question, ans, imp }, i) => (
             <section className="card-container" key={i}>
               <section className="answer-count">
                 {/* <div className='util-count'>2</div> */}
@@ -46,15 +45,15 @@ const RenderQestion = (props) => {
                     <button>Post Answer</button>
                   </section> */}
                   
-                  <span class="material-symbols-outlined">share</span>
+                  <span className="material-symbols-outlined">share</span>
                   
-                  <span class="material-symbols-outlined">
+                  <span className="material-symbols-outlined">
                     thumb_up_off
                   </span>
-                  <span class="material-symbols-outlined">
+                  <span className="material-symbols-outlined">
                     thumb_down_off
                   </span>
-                  <span class="material-symbols-outlined">
+                  <span className="material-symbols-outlined">
                     group
                   </span>
                 </section>

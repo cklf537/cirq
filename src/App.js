@@ -13,8 +13,20 @@ export default function App() {
     setData(response.data);
   }, [response]);
 
+  const filterByTags = (e)=>{
+    const filterQuestions = data.filter(question=>{
+      return question.type.includes(e.target.innerHTML)
+    })
+    setData(filterQuestions);
+  }
+
+  const dataOBJ = {
+    filterByTags,
+    data
+  }
+
   return (
-    <AppContext.Provider value={data}>
+    <AppContext.Provider value={dataOBJ}>
       <>
         <AppHeader />
         <AppLayout />

@@ -3,12 +3,10 @@ import './addquestions.scss';
 // import '../../scss/cirq.scss';
 
 const AddQuestion = ()=>{
-    return <section className="add-question-container" >
-        <h2>Q</h2>
-        {/* <p><input type="text" className="input-primary" placeholder="Search..." /></p> */}
-        <p><button className="btn-main">THIS IS A SAMPLE BUTTON</button></p>
-        <p><button className="btn-secondary">POST ?</button></p>
-        <p><button className="btn-outlined">POST ?</button></p>
+    return <section className="add-question-container gb-20" >
+        <h2 className="gr-20">Question:</h2>
+        <p><input type="text" className="input-primary gr-20 search-box" placeholder="Post your first Question?" /></p>
+        <p><button className="btn-main">POST</button></p>
     </section>
 }
 

@@ -12,29 +12,6 @@
   left:0;
   width: 100%;
 
-  h1 {   
-    @include sm {
-      font-size: 6vw;
-      margin: 0;
-    }
-
-    @include xl {
-      margin: 0;
-      font-size: 2vw;
-    }
-  }
-
-  h2 {
-    font-size: 1.5vw;
-    margin: 0;
-    @include sm {
-      font-size: 1.5vw;
-    }
-
-    @include xl {
-      font-size: 1.2vw;
-    }
-  }
 }
 
 .appHeader{
