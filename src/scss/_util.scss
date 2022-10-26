@@ -1,4 +1,4 @@
-@use "./variables";
+@import "./variables";
 
 @mixin removeOutline {
     border: none;
@@ -6,6 +6,6 @@
     border-radius: .3rem;
 }
 
-@mixin generateColorShade($Color: variables.$prussian-blue , $type: "bg", $Percentage: 1) {
+@mixin generateColorShade($Color: $prussian-blue , $type: "bg", $Percentage: 1) {
     color: rgba($color: $Color, $alpha: 1.0);
 }
