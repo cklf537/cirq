@@ -5,8 +5,8 @@ const AppHeader = () => {
   return (
     <header className="appHeader">
       <section className="app-heading">
-        <h1>{`< CIRQ />`}</h1>
-        <h2> Common Interview Reference Questions</h2>
+        <h1>{`< iPrepQ />`}</h1>
+        <h2> Interview Prepration, Questions & more...</h2>
       </section>
       <section className="header-tags">
         <TechTags />
