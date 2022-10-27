@@ -89,6 +89,7 @@ $elements:('button','input','form');
 
 // Headings
 
+
 h1{
     @include sm {
         padding: 0px;
@@ -111,7 +112,7 @@ h2{
     }
 }
 
-// Paddings [5,10,15,20]
+// Gutter spacing [5,10,15,20]
 
 $basePadding: 5;
 
@@ -133,4 +134,12 @@ $basePadding: 5;
     }
 
     $basePadding: $basePadding + 5;
+}
+
+// margin & padding
+.m0{
+    margin: 0;
+}
+.p0{
+    padding: 0;
 }
