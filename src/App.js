@@ -6,7 +6,12 @@ import AppLayout from './component/layout/layout.component';
 import { AppContext } from './data/app.context';
 import './global.scss';
 
+import { useSelector, useDispatch } from 'react-redux';
+import {LOAD_DATA,FILTER_BY_TAGS } from './store/root.reducer'
+
+
 export default function App() {
+  /*
   const [data, setData] = useState(null);
   document.title = '< CIRQ />';
   useMemo(() => {
@@ -24,9 +29,31 @@ export default function App() {
     filterByTags,
     data
   }
+  */
+
+  const dispatch = useDispatch();
+  const loadIniData = ()=>{
+    dispatch(LOAD_DATA(response));
+  }
+ 
+  useMemo(()=>{
+    loadIniData();
+  },[]);
+
+  const {questions} = useSelector(state=>state.root);
+
+  const filterItems = (data)=>{
+    dispatch(FILTER_BY_TAGS(data));
+  }
+
+  const contectObj = {
+    questions,
+    filterItems
+  }
+
 
   return (
-    <AppContext.Provider value={dataOBJ}>
+    <AppContext.Provider value={contectObj}>
       <>
         <AppHeader />
         <AppLayout />

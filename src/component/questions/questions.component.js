@@ -6,7 +6,8 @@ import QuestionCard from '../card/card.component';
 import Badge from '../badge/badge.component';
 
 const RenderQestion = (props) => {
-  const { data } = useContext(AppContext);
+  const { questions } = useContext(AppContext);
+  const {data} = questions;
   return (
     <>
       <form>
@@ -18,6 +19,7 @@ const RenderQestion = (props) => {
               </section>
               <section className="card-body gl-20">
                 <h3 className='m0 p0'>{`${ConvertToSentanceCase(question)}`}</h3>
+                {/* <h3>{question}</h3> */}
                 <p className='m0 gt-10'>{ans ? ans : 'Be the first to answer'}</p>
                 {imp ? (
                   <>
@@ -34,7 +36,7 @@ const RenderQestion = (props) => {
                   ''
                 )}
                 <section className='question-card-metadata m0 p0'>
-                  <span class="material-symbols-outlined">
+                  <span className="material-symbols-outlined">
                     arrow_drop_down
                   </span> Expand to see 0 more answers.
                 </section>
