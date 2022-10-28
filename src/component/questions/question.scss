@@ -1,45 +1,10 @@
 @import '../../scss/variables';
 
-$card-padding: .8rem;
 .card-container{
-    background-color: white;
-    display: flex;
-    margin-bottom: 1rem;
-    
-    .answer-count{
-        padding: $card-padding; 
-        .util-count{
-          margin: 1rem 0 5px 0;
-          padding: .8rem;
-          text-align: center;
-          width: 100px;
-        }
-    }
-
-    .card-title{
-        h1,h2,h3,h4,h5,h6{
-            font-weight: 700;
-        }
-    }
-    .card-body{
-        padding: $card-padding;
-        display: table-cell;
-        vertical-align: top;
-
-        h1,h2,h3,h4,h5,h6{
-          margin:0px;
-      }
-
-    }
-
-    .question-card-metadata{
-      span{
-        margin-right: 1.5rem;
-        color: #ccc;
-        :hover{
-          color: $app-text-color;
-        }
-      }
-    }
-
+  display: flex;
+  margin-bottom: 40px !important;
+  .card-body{
+    display: table-cell;
+    vertical-align: top;
+  }
 }

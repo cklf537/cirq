@@ -6,23 +6,21 @@ import QuestionCard from '../card/card.component';
 import Badge from '../badge/badge.component';
 
 const RenderQestion = (props) => {
-  const {data} = useContext(AppContext);
+  const { questions } = useContext(AppContext);
+  const {data} = questions;
   return (
     <>
-    {/* <QuestionCard /> */}
       <form>
         {data &&
           data.map(({ question, ans, imp }, i) => (
-            <section className="card-container" key={i}>
-              <section className="answer-count">
-                {/* <div className='util-count'>2</div> */}
-                {/* <div className='util-count'><span class="material-symbols-outlined" title='Answers'>comment</span>24</div> */}
+            <section className="card-container " key={i}>
+              <section className="answer-count gl-20">
                 <Badge />
-                {/* <div className='util-count'>15</div> */}
               </section>
-              <section className="card-body">
-                <h3>{`${ConvertToSentanceCase(question)}`}</h3>
-                <p>{ans ? ans : '-- Coming soon... --'}</p>
+              <section className="card-body gl-20">
+                <h3 className='m0 p0'>{`${ConvertToSentanceCase(question)}`}</h3>
+                {/* <h3>{question}</h3> */}
+                <p className='m0 gt-10'>{ans ? ans : 'Be the first to answer'}</p>
                 {imp ? (
                   <>
                     <p>EXAMPLE:</p>
@@ -37,25 +35,10 @@ const RenderQestion = (props) => {
                 ) : (
                   ''
                 )}
-                <section className='question-card-metadata'>
-                  {/* <section>
-                    <textarea>
-                      some text
-                    </textarea>
-                    <button>Post Answer</button>
-                  </section> */}
-                  
-                  <span className="material-symbols-outlined">share</span>
-                  
+                <section className='question-card-metadata m0 p0'>
                   <span className="material-symbols-outlined">
-                    thumb_up_off
-                  </span>
-                  <span className="material-symbols-outlined">
-                    thumb_down_off
-                  </span>
-                  <span className="material-symbols-outlined">
-                    group
-                  </span>
+                    arrow_drop_down
+                  </span> Expand to see 0 more answers.
                 </section>
               </section>
             </section>

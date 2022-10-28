@@ -2,9 +2,7 @@
 
 @mixin QContainer($border: solid 1px #ccc, $display: flex, $align-item: center) {
     display: $display;
-    // border-bottom:$border;
     align-items: $align-item;
-    // border: solid 1px #ccc;
     justify-content: center;
 }
 
@@ -14,4 +12,5 @@
         box-sizing: border-box;
         width:35rem
     }
+    text-align: center;
 }

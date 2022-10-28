@@ -14,8 +14,10 @@ $contentPadding: 1rem 1rem;
   }
 
   .left-content{
+    width: 80%;
     @include sm{
       padding: 1.5rem;
+      width: 100%;
     }
   }
 

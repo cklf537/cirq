@@ -130,12 +130,6 @@ export const data = [
     type: 'Javascript, ES6',
   },
   {
-    question: 'how to merge 2 arrays in ES6 ? (spread operator)',
-    ans: '',
-    imp: '',
-    type: 'Javascript, ES6',
-  },
-  {
     question:
       'How to get a specific value from an array ? let arr = [1,2,3,4,5]; arr.at(2); = 3 ',
     ans: '',
@@ -149,13 +143,7 @@ export const data = [
     type: 'Software development',
   },
   {
-    question: 'SDLC steps',
-    ans: '',
-    imp: '',
-    type: 'Javascript, ES6',
-  },
-  {
-    question: 'Some Questoop OBIEE',
+    question: 'What is OBIEE',
     ans: '',
     imp: '',
     type: 'OBIEE',
