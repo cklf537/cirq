@@ -1,0 +1,16 @@
+mongodb:
+user:cklf537
+pwd: x0M5BpJQ5A2F7Ghr
+
+
+
+
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://cklf537:<password>@cluster537.bo2iezo.mongodb.net/?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+

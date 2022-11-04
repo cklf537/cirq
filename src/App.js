@@ -20,14 +20,17 @@ export default function App() {
     loadIniData();
   },[]);
 
-  const {questions} = useSelector(state=>state.root);
+  const {questions, tags} = useSelector(state=>state.root);
 
   const filterItems = (data)=>{
-    dispatch(FILTER_BY_TAGS(data));
+    const tag = data.innerHTML;
+    const id = data.id;
+    dispatch(FILTER_BY_TAGS({tag,id}));
   }
 
   const contectObj = {
     questions,
+    tags,
     filterItems
   }
 
