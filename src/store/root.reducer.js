@@ -13,8 +13,10 @@ export const rootSlice = createSlice({
     reducers:{
         FILTER_BY_TAGS: (state, action)=>{
             const {tag, id} = action.payload;
-            state.tags.activeTags = state.tags.activeTags !==  undefined ? [...state.tags.activeTags, id] : [id]
+            // state.tags.activeTags = state.tags.activeTags !==  undefined ? [...state.tags.activeTags, id] : [id]
             state.questions.data = state.questions.data.filter(question=>question.type.includes(tag));
+            // state.filteredQuestions = state.questions.data.filter(question=>question.type.includes(tag));
+            
             
             console.log(current(state));
         },
@@ -23,8 +25,6 @@ export const rootSlice = createSlice({
             state.tags = {
                 totalTags: getUniqueTags(state.questions.data.filter(question=>question.type))                 
             }
-            // state.tags = 
-            console.log(current(state));
         }
     }
 });

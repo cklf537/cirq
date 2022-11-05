@@ -28,10 +28,15 @@ export default function App() {
     dispatch(FILTER_BY_TAGS({tag,id}));
   }
 
+  const clearFilter = ()=>{
+    dispatch(LOAD_DATA(response));
+  } 
+
   const contectObj = {
     questions,
     tags,
-    filterItems
+    filterItems,
+    clearFilter
   }
 
 
