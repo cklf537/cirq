@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/cirq/static/css/main.4d3b67d1.css",
-    "main.js": "/cirq/static/js/main.da97738c.js",
-    "index.html": "/cirq/index.html",
-    "main.4d3b67d1.css.map": "/cirq/static/css/main.4d3b67d1.css.map",
-    "main.da97738c.js.map": "/cirq/static/js/main.da97738c.js.map"
+    "main.css": "/iPrepQ/static/css/main.ee1c9732.css",
+    "main.js": "/iPrepQ/static/js/main.74c15f38.js",
+    "index.html": "/iPrepQ/index.html",
+    "main.ee1c9732.css.map": "/iPrepQ/static/css/main.ee1c9732.css.map",
+    "main.74c15f38.js.map": "/iPrepQ/static/js/main.74c15f38.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d3b67d1.css",
-    "static/js/main.da97738c.js"
+    "static/css/main.ee1c9732.css",
+    "static/js/main.74c15f38.js"
   ]
 }

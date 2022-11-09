@@ -11,9 +11,10 @@
     background-color: $maximum-yellow-red;
     cursor: pointer;
   }
-  .activeTag{
-    // background-color: $maximum-yellow-red !important;
-    background-color: red !important;
-    border:solid 1px #000;
-  }
+}
+
+.active-tag{
+  // background-color: $maximum-yellow-red !important;
+  background-color: red !important;
+  border:solid 1px #000;
 }

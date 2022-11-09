@@ -9,11 +9,9 @@ import { useDispatch } from 'react-redux';
 const TechTags = () => {
   const { questions, tags, filterItems, clearFilter } = useContext(AppContext);
   const { totalTags, activeTags } = tags;
- 
   const [selectTag, setSelectTag] = useState([]);
 
   const filterTags = (e) => {
-    e.target.style.backgroundColor = 'red';
     setSelectTag([...selectTag, e.target.id]);
     filterItems(e.target);
   }
@@ -23,9 +21,7 @@ const TechTags = () => {
     clearFilter();
   }
 
-  
-
-  console.log("selectTag", selectTag);
+  console.log("selectTag", totalTags);
 
   return (
     <>
@@ -36,11 +32,11 @@ const TechTags = () => {
         totalTags.map((type, i) => (
           <div
             onClick={filterTags}
-            className={`tec-tags gr-10 gb-10 `}
+            className={`tec-tags ${type.active === true ? 'active-tag' : ''} gr-10 gb-10 `}
             key={i}
             data-id={i}
             id={i} >
-            {type.toUpperCase()}
+            {type.title.toUpperCase()}
           </div>
         ))}
     </>

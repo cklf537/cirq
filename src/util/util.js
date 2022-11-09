@@ -9,3 +9,14 @@ export const getUniqueTags = (tags) => {
   tags.forEach((tag) => typeTags.push(tag.type));
   return [...new Set(typeTags)];
 };
+
+export const tag = (tags)=>{
+  const tagObj = [];
+  for (const key in tags) {
+    tagObj.push({
+      title: tags[key],
+      active: false
+    })
+  }
+  return tagObj;
+}

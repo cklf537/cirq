@@ -1,6 +1,6 @@
 import { createSlice, current } from "@reduxjs/toolkit";
 import produce from "immer";
-import { getUniqueTags } from "../util/util";
+import { getUniqueTags, tag } from "../util/util";
 
 
 const initialState = {
@@ -13,17 +13,14 @@ export const rootSlice = createSlice({
     reducers:{
         FILTER_BY_TAGS: (state, action)=>{
             const {tag, id} = action.payload;
-            // state.tags.activeTags = state.tags.activeTags !==  undefined ? [...state.tags.activeTags, id] : [id]
             state.questions.data = state.questions.data.filter(question=>question.type.includes(tag));
-            // state.filteredQuestions = state.questions.data.filter(question=>question.type.includes(tag));
-            
-            
-            console.log(current(state));
+            state.tags.totalTags[id].active = state.tags.totalTags[id].active === true ? false : true;
+            // console.log(current(state));
         },
         LOAD_DATA:(state, action)=>{
             state.questions = action.payload;
             state.tags = {
-                totalTags: getUniqueTags(state.questions.data.filter(question=>question.type))                 
+                totalTags: tag(getUniqueTags(state.questions.data.filter(question=>question.type)))                 
             }
         }
     }
