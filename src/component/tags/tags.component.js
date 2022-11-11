@@ -21,12 +21,12 @@ const TechTags = () => {
     clearFilter();
   }
 
-  console.log("selectTag", totalTags);
+  // console.log("selectTag", totalTags);
 
   return (
     <>
       <h3>Filter by tags:</h3>
-      {selectTag && selectTag.length > 0 ? <div className='gb-10' onClick={handelClear}>Reset</div> : '' }
+      {selectTag && selectTag.length > 0 ? <div className='gb-10 btn-liniked' onClick={handelClear}>Reset</div> : '' }
       
       {totalTags &&
         totalTags.map((type, i) => (

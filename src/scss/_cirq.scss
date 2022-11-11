@@ -6,7 +6,7 @@
 
 /* BUTTON */
 $elements:("button","input");
-$buttons:("main","secondary","outlined",);
+$buttons:("main","secondary","outlined","liniked");
 $btn-size: medium;
 $btn-main-color: white;
 $btn-secondary-color: black;
@@ -57,6 +57,12 @@ $btn-font-weight: bold;
             background-color: rgba(#ccc,0.0);
             border: solid 1px $prussian-blue;
             color: $prussian-blue;
+        }
+    }@else if $button == 'liniked'{
+        .btn-#{$button}{
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
         }
     }
 }
