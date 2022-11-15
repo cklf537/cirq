@@ -2,15 +2,33 @@
 @import '../../scss/variables';
 
 .app-heading {  
-  background-color: $app-header-bg;
-  padding: 1rem;
-  text-align: center;
+  background-color: #fff;
+  padding: 1rem 2.5rem 2rem 3rem;
   color: $app-text-color;
-  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+  display: flex;
   position: fixed;
   top: 0px;
   left:0;
   width: 100%;
+  border-bottom:solid 1px $mandarin;
+  z-index: 1;
+  h1{
+    color: $mandarin;
+  }
+  h2{
+    color: $space-cadet;
+    // font-size: 1.1rem;
+  }
+  .app-heading-menu{
+    margin-right: 2rem;
+    vertical-align: bottom;
+    margin-left: auto;
+    align-self: flex-end;
+    padding-right: 2.5rem;
+    span{
+      margin: 0 1rem;
+    }
+  }
 
 }
 
@@ -20,7 +38,7 @@
       display: block;
       visibility: visible;
       text-align: center;
-      margin-top: 10rem;
+      margin-top: 12rem;
     }
 
     @include xl {

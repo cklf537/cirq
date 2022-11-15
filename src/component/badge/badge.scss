@@ -3,6 +3,7 @@ $border-thickness: 1px;
 $width:100px;
 $height: 100px;
 $border-Radious: 50%;
+@import '../../scss/variables';
 
 @mixin badge($bc: $bg-color, $bdr: $border-thickness, $wt: $width, $ht: $height, $br: $border-Radious) {
     display: flex;
@@ -15,16 +16,43 @@ $border-Radious: 50%;
     align-items: center;
 }
 
-@mixin badgeContent($font-size:xx-large, $color: #ffffff, $font-weight: 700) {
-    font-size: $font-size;
+@mixin badgeContent($font-size:xx-large, $color: #080808, $font-weight: 700) {
+    position: relative;
     color: $color;
-    font-weight: 700;
+    top:-41;
+    left: 12
+}
+
+@mixin newBadge {
+    color: $mandarin;
+    width: 2rem;
+    padding: 0 .5rem;
+    span{
+        margin: 0 0 0.75rem 0;
+        font-size: 2rem;
+    }
+    span:nth-child(1){
+        color: $space-cadet;
+    }
+    
 }
 
 .badgeContainer{
-    @include badge(#F79256,0px,60px,60px,50%)    
+    @include newBadge();  
+    // @include badge(#F79256,0px,60px,60px,50%)    
 }
 
 .badgeContent{
     @include badgeContent
+}
+
+/* NEW BADGE DESIGN */
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48
 }

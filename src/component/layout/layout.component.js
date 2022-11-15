@@ -7,17 +7,15 @@ import AddQuestion from '../add-question/addquestion.component';
 
 const AppLayout = () => {
   return (
-    <section className="main-body">
+    <>
       <section className="left-content">
-        {/* <input type="text"  /> */}
-        <AddQuestion />
+        {/* <AddQuestion /> */}
         <RenderQestion />
       </section>
       <section className="right-content">
-        {/* <Badge /> */}
         <TechTags />
       </section>
-    </section>
+    </>
   );
 };
 

@@ -10,13 +10,12 @@ $contentPadding: 1rem 1rem;
   display: flex;
 
   @include xl {
-    margin: $app-viewpoer1200-margin;
+    margin: $app-viewpoer1200-margin 0;
   }
 
   .left-content{
     width: 80%;
     @include sm{
-      padding: 1.5rem;
       width: 100%;
     }
   }

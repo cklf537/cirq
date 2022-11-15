@@ -3,18 +3,15 @@
 .tec-tags {
   display: inline-block;
   padding: 0.6rem;
-  background-color: #f79256;
-  // margin: 5px;
+  background-color: $mandarin;
   border-radius: 5px;
   font-weight: 500;
   &:hover {
-    background-color: $maximum-yellow-red;
+    background-color: $silver;
     cursor: pointer;
   }
 }
 
 .active-tag{
-  background-color: $maximum-yellow-red !important;
-  // background-color: red !important;
-  // border:solid 1px #000;
+  background-color: $silver !important;
 }

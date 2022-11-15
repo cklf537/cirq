@@ -14,10 +14,11 @@ const RenderQestion = (props) => {
         {data &&
           data.map(({ question, ans, imp }, i) => (
             <section className="card-container " key={i}>
-              <section className="answer-count gl-20">
+              <section className="answer-count ">
                 <Badge />
+               
               </section>
-              <section className="card-body gl-20">
+              <section className="card-body ">
                 <h3 className='m0 p0'>{`${ConvertToSentanceCase(question)}`}</h3>
                 {/* <h3>{question}</h3> */}
                 <p className='m0 gt-10'>{ans ? ans : 'Be the first to answer'}</p>
@@ -35,11 +36,11 @@ const RenderQestion = (props) => {
                 ) : (
                   ''
                 )}
-                <section className='question-card-metadata m0 p0'>
+                {/* <section className='question-card-metadata m0 p0'>
                   <span className="material-symbols-outlined">
                     arrow_drop_down
                   </span> Expand to see 0 more answers.
-                </section>
+                </section> */}
               </section>
             </section>
           ))}
