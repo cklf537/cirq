@@ -19,6 +19,9 @@
     color: $space-cadet;
     // font-size: 1.1rem;
   }
+  .homeNav{
+    text-decoration: none;
+  }
   .app-heading-menu{
     margin-right: 2rem;
     vertical-align: bottom;
@@ -29,7 +32,9 @@
       margin: 0 1rem;
     }
   }
-
+  NavLink{
+    color: $mandarin;
+  }
 }
 
 .appHeader{
@@ -38,7 +43,7 @@
       display: block;
       visibility: visible;
       text-align: center;
-      margin-top: 12rem;
+      margin-top: 13rem;
     }
 
     @include xl {

@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/iPrepQ/static/css/main.ee1c9732.css",
-    "main.js": "/iPrepQ/static/js/main.74c15f38.js",
+    "main.css": "/iPrepQ/static/css/main.8d716b3e.css",
+    "main.js": "/iPrepQ/static/js/main.d37b9e71.js",
     "index.html": "/iPrepQ/index.html",
-    "main.ee1c9732.css.map": "/iPrepQ/static/css/main.ee1c9732.css.map",
-    "main.74c15f38.js.map": "/iPrepQ/static/js/main.74c15f38.js.map"
+    "main.8d716b3e.css.map": "/iPrepQ/static/css/main.8d716b3e.css.map",
+    "main.d37b9e71.js.map": "/iPrepQ/static/js/main.d37b9e71.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee1c9732.css",
-    "static/js/main.74c15f38.js"
+    "static/css/main.8d716b3e.css",
+    "static/js/main.d37b9e71.js"
   ]
 }

@@ -1,0 +1,29 @@
+
+@import "../../scss/breakpoints.scss";
+@import "../../scss/variables.scss";
+
+.appHeader{
+    .app-heading-menu {
+        @include sm {
+            display: none;
+            visibility: hidden;
+        }
+
+        @include xl {
+            display: block;
+            visibility: visible;
+        }
+    }
+    
+    
+    .header-tags {
+        span{
+            margin: 0 4rem;
+            font-size: 3rem;
+            color: $mandarin;
+            &:hover{
+                color: $silver;
+            }
+        }
+    }
+}

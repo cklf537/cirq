@@ -1,4 +1,5 @@
 @import "../../scss/variables";
+@import "../../scss/breakpoints";
 
 .tec-tags {
   display: inline-block;
@@ -9,6 +10,13 @@
   &:hover {
     background-color: $silver;
     cursor: pointer;
+  }
+  @include sm {
+    padding-top: 2rem;
+  }
+
+  @include xl {
+
   }
 }
 
