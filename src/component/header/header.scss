@@ -12,8 +12,21 @@
   width: 100%;
   border-bottom:solid 1px $mandarin;
   z-index: 1;
+
   h1{
     color: $mandarin;
+    // font-family: 'Bree Serif', serif;
+    font-family: 'Pacifico', cursive;
+    // font-family: 'Rokkitt', serif;
+   
+    @include sm {
+
+    }
+
+    @include xl {
+
+    }
+
   }
   h2{
     color: $space-cadet;
@@ -43,7 +56,7 @@
       display: block;
       visibility: visible;
       text-align: center;
-      margin-top: 13rem;
+      margin-top: 15rem;
     }
 
     @include xl {

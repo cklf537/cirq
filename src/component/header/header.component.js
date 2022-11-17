@@ -20,7 +20,7 @@ const AppHeader = () => {
       </section>
       <section className="header-tags">
         <RightNavigation />
-        {/* <TechTags /> */}
+        <TechTags />
       </section>
     </header>
   );

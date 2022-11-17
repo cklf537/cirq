@@ -1,11 +1,22 @@
 @import '../../scss/variables';
+@import "../../scss/breakpoints";
 
 .card-container{
   display: flex;
-  margin-bottom: .75rem !important;
+  font-weight: 300;
   .card-body{
     display: table-cell;
     vertical-align: top;
     width: 100%;
+  }
+
+  @include sm{
+    margin-bottom: 2.5rem !important;
+    font-size: 2rem;
+  }
+
+  @include xl {
+    margin-bottom: 1.25rem !important;
+    font-size: 1rem;
   }
 }

@@ -4,19 +4,20 @@
 .tec-tags {
   display: inline-block;
   padding: 0.6rem;
-  background-color: $mandarin;
+  background-color: $lemon-meringue;
   border-radius: 5px;
   font-weight: 500;
   &:hover {
-    background-color: $silver;
+    background-color: $mandarin;
     cursor: pointer;
   }
+
   @include sm {
-    padding-top: 2rem;
+    font-size: 1.5rem;
   }
-
+  
   @include xl {
-
+    font-size: 1rem;
   }
 }
 

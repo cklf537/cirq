@@ -10,13 +10,12 @@ const RenderQestion = (props) => {
   const {data} = questions;
   return (
     <>
-      <form>
+      {/* <form> */}
         {data &&
           data.map(({ question, ans, imp }, i) => (
             <section className="card-container " key={i}>
               <section className="answer-count ">
-                <Badge />
-               
+                {/* <Badge /> */}
               </section>
               <section className="card-body ">
                 <h3 className='m0 p0'>{`${ConvertToSentanceCase(question)}`}</h3>
@@ -44,7 +43,7 @@ const RenderQestion = (props) => {
               </section>
             </section>
           ))}
-      </form>
+      {/* </form> */}
     </>
   );
 };
