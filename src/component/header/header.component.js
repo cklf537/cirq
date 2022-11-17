@@ -3,8 +3,10 @@ import './header.scss';
 import TechTags from '../tags/tags.component';
 import RightNavigation from './right-nav.component';
 import { Link, NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const AppHeader = () => {
+  const {displayTags} = useSelector(state=>state.header);
   return (
     <header className="appHeader">
       <section className="app-heading">
@@ -20,7 +22,7 @@ const AppHeader = () => {
       </section>
       <section className="header-tags">
         <RightNavigation />
-        <TechTags />
+        {displayTags && displayTags !== false ? <TechTags /> : ""}
       </section>
     </header>
   );

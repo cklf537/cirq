@@ -4,13 +4,13 @@ import { getUniqueTags, tag } from "../util/util";
 import { filterTages } from './extend.rootreducer';
 
 
-const initialState = {
+const rootState = {
     questions:[]
 };
 
 export const rootSlice = createSlice({
     name: 'root',
-    initialState,
+    initialState: rootState,
     reducers:{
         FILTER_BY_TAGS: (state, action)=>{
             const {tag, id} = action.payload;
@@ -27,9 +27,6 @@ export const rootSlice = createSlice({
     }
 });
 
-const highliteActiveTags = (state, tagId)=>{
-
-}
 
 export const {FILTER_BY_TAGS, LOAD_DATA} = rootSlice.actions;
 export default rootSlice.reducer;
