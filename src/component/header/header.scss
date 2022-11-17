@@ -20,11 +20,11 @@
     // font-family: 'Rokkitt', serif;
    
     @include sm {
-
+      font-size: 6.5rem;
     }
 
     @include xl {
-
+      font-size: 2.5rem;
     }
 
   }
@@ -56,7 +56,7 @@
       display: block;
       visibility: visible;
       text-align: center;
-      margin-top: 15rem;
+      margin-top: 19rem;
     }
 
     @include xl {
