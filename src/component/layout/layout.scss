@@ -17,12 +17,12 @@ $contentPadding: 1rem 1rem;
     width: 80%;
     @include sm{
       width: 100%;
-      margin-top: 2.5rem;
+      margin: 2.5rem 1rem;
     } 
 
     @include xl {
-      margin-top: 0px;
-      padding: 1rem 3rem 0 0;
+      margin: 0px;
+      padding: 1rem 3rem 0 0rem;
     }
   }
 
