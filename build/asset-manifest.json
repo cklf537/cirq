@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/iPrepQ/static/css/main.b6720de9.css",
+    "main.css": "/iPrepQ/static/css/main.f3d9626c.css",
     "main.js": "/iPrepQ/static/js/main.8b11c8a2.js",
     "index.html": "/iPrepQ/index.html",
-    "main.b6720de9.css.map": "/iPrepQ/static/css/main.b6720de9.css.map",
+    "main.f3d9626c.css.map": "/iPrepQ/static/css/main.f3d9626c.css.map",
     "main.8b11c8a2.js.map": "/iPrepQ/static/js/main.8b11c8a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6720de9.css",
+    "static/css/main.f3d9626c.css",
     "static/js/main.8b11c8a2.js"
   ]
 }

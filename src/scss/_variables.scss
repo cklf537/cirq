@@ -6,6 +6,16 @@ $app-text-color: #003049ff;
 $app-viewpoer1200-margin: 9rem;
 $app-header-bg: #faedcd;
 
+
+// new veraibles 11/17
+
+/* SCSS HEX */
+$charcoal: #2f4858ff;
+$queen-blue: #33658aff;
+$dark-sky-blue: #86bbd8ff;
+$honey-yellow: #f6ae2dff;
+$orange-red: #f26419ff;
+
 // New Variables
 $prussian-blue: #003049ff;
 $maximum-red: #d62828ff;
@@ -15,11 +25,18 @@ $lemon-meringue: #eae2b7ff;
 $app-padding: 5px;
 $app-margin: 5px;
 
-$space-cadet: #2d3142ff;
+// $space-cadet: #2d3142ff;
+$space-cadet: $charcoal;
 $silver: #bfc0c0ff;
 $white: #ffffffff;
-$mandarin: #ef8354ff;
+// $mandarin: #ef8354ff;
+$mandarin: $orange-red;
+
 $black-coral: #4f5d75ff;
+
+
+
+
 
 
 
