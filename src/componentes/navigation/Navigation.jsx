@@ -1,4 +1,4 @@
-
+import React from 'react';
 const Navigation = (...props) => {
     const [menu] = props;
     const mainMenu = menu.menu;
