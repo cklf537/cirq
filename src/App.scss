@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+body{
+    font-family: 'Lexend', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container{
+    & section[class*="col"] { // common padding for layout 
+        padding: 1.5rem; 
+        // border: solid 1px var(--bs-light);
+    }
+}
+// section[class*="col"] { // common padding for layout 
+//     padding: 1.5rem; 
+// }
+
+@media only screen and (max-width: 992px) {
+    body{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body{
+        font-size: 1.25rem;
+    }
+}
