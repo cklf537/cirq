@@ -7,6 +7,7 @@ import LeaderBoard from './componentes/leader-board/LeaderBoard';
 import JobSearch from './componentes/job-search/JobSearch';
 import JobListing from './componentes/job-listing/JobListing';
 import JobSearchFilter from './componentes/job-search-filter/JobSearchFilter';
+import Footer from './componentes/footer/Footer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -39,6 +40,11 @@ function App() {
           </section>
         </section>
         <section className="col-xl-3 col-sm-12 col-md-12">&nbsp;</section>
+        <section className="row">
+          <section className="col d-flex justify-content-end">
+            <Footer />
+          </section>
+        </section>
       </section>
 
 
