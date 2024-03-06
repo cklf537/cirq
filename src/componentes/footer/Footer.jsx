@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './footer.scss';
+import { NavLink } from 'react-router-dom';
 
 const Footer = ()=>{
     return (
@@ -9,7 +10,8 @@ const Footer = ()=>{
 
             <p> &#169; </p>
             <p>|</p>
-            <p>Privacy</p>
+            <p>
+                <NavLink to="/privacy">Privacy</NavLink> </p>
             </section>
         </>
     )

@@ -1,43 +1,13 @@
-import React from 'react';
+import React, {memo} from 'react';
 import { useEffect, useState } from "react";
 import Navigation from "../navigation/Navigation";
+import { useMemo } from 'react';
+import MainMenu from '../../data/menu';
 
 
 const Header = () => {
-
-    const [menu, setMenu] = useState();
-
-    const mainMenu = [
-        {
-            'title': 'work',
-            'Display': 'Work',
-            "url":"#",
-            'nav-id': 1
-        },
-        {
-            'title': 'services',
-            'Display': 'Services',
-            "url":"#",
-            'nav-id': 2
-        },
-        {
-            'title': 'contact',
-            'Display': 'Contact',
-            "url":"#",
-            'nav-id': 3
-        },
-        {
-            'title': 'blog',
-            'Display': 'Blog',
-            "url":"#",
-            'nav-id': 4
-        },
-    ]
-
-    useEffect(() => {
-        setMenu(mainMenu);
-    },[]);
-
+    const [menu, setMenu] = useState(MainMenu);
+    console.log("Header")
     return (
         <section className="">
             <div className=" text-center">
@@ -55,4 +25,4 @@ const Header = () => {
 };
 
 
-export default Header;
+export default memo(Header);

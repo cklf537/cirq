@@ -14,13 +14,13 @@ const JobListing = () => {
                 </a>
                 <div className="socialShare d-flex justify-content-end">
                     <p>Shared by: anonymous</p>
-                    <button type="button" class="btn btn-sm">
-                        <span class="material-symbols-outlined text-secondary">
+                    <button type="button" className="btn btn-sm">
+                        <span className="material-symbols-outlined text-secondary">
                             share
                         </span>
                     </button>
-                    <button type="button" class="btn btn-sm">
-                        <span class="material-symbols-outlined text-secondary">
+                    <button type="button" className="btn btn-sm">
+                        <span className="material-symbols-outlined text-secondary">
                             comment
                         </span>
                     </button>
@@ -37,13 +37,13 @@ const JobListing = () => {
                 </a>
                 <div className="socialShare d-flex justify-content-end">
                     <p>Shared by: anonymous</p>
-                    <button type="button" class="btn btn-sm">
-                        <span class="material-symbols-outlined text-secondary">
+                    <button type="button" className="btn btn-sm">
+                        <span className="material-symbols-outlined text-secondary">
                             share
                         </span>
                     </button>
-                    <button type="button" class="btn btn-sm">
-                        <span class="material-symbols-outlined text-secondary">
+                    <button type="button" className="btn btn-sm">
+                        <span className="material-symbols-outlined text-secondary">
                             comment
                         </span>
                     </button>
@@ -60,13 +60,13 @@ const JobListing = () => {
                 </a>
                 <div className="socialShare d-flex justify-content-end">
                     <p>Shared by: anonymous</p>
-                    <button type="button" class="btn btn-sm">
-                        <span class="material-symbols-outlined text-secondary">
+                    <button type="button" className="btn btn-sm">
+                        <span className="material-symbols-outlined text-secondary">
                             share
                         </span>
                     </button>
-                    <button type="button" class="btn btn-sm">
-                        <span class="material-symbols-outlined text-secondary">
+                    <button type="button" className="btn btn-sm">
+                        <span className="material-symbols-outlined text-secondary">
                             comment
                         </span>
                     </button>
