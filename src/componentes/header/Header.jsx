@@ -2,7 +2,7 @@ import React, {memo} from 'react';
 import { useEffect, useState } from "react";
 import Navigation from "../navigation/Navigation";
 import { useMemo } from 'react';
-import MainMenu from '../../data/menu';
+import {MainMenu} from '../../data/menu';
 
 
 const Header = () => {
@@ -25,4 +25,4 @@ const Header = () => {
 };
 
 
-export default memo(Header);
+export default Header;

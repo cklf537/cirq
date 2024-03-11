@@ -1,5 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { AppContect } from '../../data/Context';
 const JobSearchFilter = ()=>{
+
+    const {handleSearch} = useContext(AppContect);
+    console.log("h",handleSearch);
     return(
         <section className="row">
             <section className="col">

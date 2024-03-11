@@ -1,3 +1,10 @@
 import { createContext } from "react";
 
-const AppContect = createContext({});
+const initialState = {
+    jobListings:[],
+    defaultUser:[],
+    headerNavigation:[],
+    footer:[],
+}
+
+export const AppContect = createContext({});

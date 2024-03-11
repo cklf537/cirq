@@ -4,6 +4,7 @@ import JobListing from '../../../componentes/job-listing/JobListing';
 import JobSearchFilter from '../../../componentes/job-search-filter/JobSearchFilter';
 import Footer from '../../../componentes/footer/Footer';
 const LandingPage = ()=>{
+
     return <>
         <section className="row">
             <section className="col-sm-12 col-md-12 col-xl">
@@ -15,11 +16,6 @@ const LandingPage = ()=>{
                         <JobSearch />
                     </section>
                 </section>
-                {/* <section className="row">
-            <section className="col">
-              <JobSearchFilter />
-            </section>
-          </section> */}
                 <section className="row">
                     <section className="col">
                         <JobSearchFilter />

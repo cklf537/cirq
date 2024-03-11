@@ -1,4 +1,16 @@
 
-export default function Privacy(){
-    return <div>Privacy</div>
+// export default function Privacy(){
+//     return <div>Privacy</div>
+// }
+
+import React from 'react'
+
+const Privacy = () => {
+  return (
+    <div>
+      Privacy Policy
+    </div>
+  )
 }
+
+export default Privacy

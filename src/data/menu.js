@@ -1,4 +1,4 @@
-const MainMenu = [
+export const MainMenu = [
     {
         'title': 'work',
         'Display': 'Work',
@@ -25,4 +25,12 @@ const MainMenu = [
     },
 ];
 
-export default MainMenu;
+export const initialState = {
+    jobListings:[],
+    defaultUser:[],
+    headerNavigation:[],
+    footer:[],
+}
+
+
+// export default MainMenu;
