@@ -1,0 +1,9 @@
+.job-list-wrapper{
+    margin-bottom: 2rem;
+    border-bottom: dotted 1px var(--bs-light-border-subtle);
+    .socialShare>*{
+        margin: 0px 0.3rem;
+        border:none;
+        font-size:1rem;
+    }
+}
