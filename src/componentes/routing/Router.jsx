@@ -29,6 +29,6 @@ const router = createBrowserRouter([
     ]
   },
   
-]);
+], {basename: "/iPrepQ"});
 
 export default router;
