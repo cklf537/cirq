@@ -20,7 +20,7 @@ const reducer = (state, action)=>{
       }
     case "SEARCH_JOBS":
       const filteredPosts = state.jobListings.filter((post) =>
-          post.title.toLowerCase().includes(action.payload.toLowerCase())
+          action.payload != null ? post.title.toLowerCase().includes(action.payload.toLowerCase()) : state
       );
       return {
         ...state,
@@ -32,7 +32,7 @@ const reducer = (state, action)=>{
 }
 
 function App() {
-
+  console.log("App")
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(()=>{
@@ -50,6 +50,12 @@ function App() {
       type: "SEARCH_JOBS",
       payload: searchInput
     })
+  }
+
+  initialState.handleShareJobPost = ({ jobTitle,
+    jobDescription,
+    jobLink})=>{
+      console.log(jobDescription);
   }
   
   return (
