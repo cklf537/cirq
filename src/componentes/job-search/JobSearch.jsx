@@ -5,7 +5,7 @@ import { AppContect } from '../../data/Context';
 const JobSearch = () => {
     const [searchInput, setSearchInput] = useState(null);
     const searchInputValue = useRef();
-    const { handleSearch, np } = useContext(AppContect);
+    const { handleSearch } = useContext(AppContect);
 
     const handleSearchChange = () => {
         setSearchInput(searchInputValue.current.value);
