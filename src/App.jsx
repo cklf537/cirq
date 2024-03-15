@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer } from 'react';
+import React, { useEffect, useMemo, useReducer } from 'react';
 import { useState } from 'react';
 import './App.scss'
 
@@ -52,12 +52,6 @@ function App() {
     })
   }
 
-  initialState.handleShareJobPost = ({ jobTitle,
-    jobDescription,
-    jobLink})=>{
-      console.log(jobDescription);
-  }
-  
   return (
     <div className='container'>
         <AppContect.Provider value={state}>
