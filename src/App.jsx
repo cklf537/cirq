@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer } from 'react';
+import React, { useEffect, useMemo, useReducer } from 'react';
 import { useState } from 'react';
 import './App.scss'
 
@@ -20,7 +20,7 @@ const reducer = (state, action)=>{
       }
     case "SEARCH_JOBS":
       const filteredPosts = state.jobListings.filter((post) =>
-          post.title.toLowerCase().includes(action.payload.toLowerCase())
+          action.payload != null ? post.title.toLowerCase().includes(action.payload.toLowerCase()) : state
       );
       return {
         ...state,
@@ -32,7 +32,7 @@ const reducer = (state, action)=>{
 }
 
 function App() {
-
+  console.log("App")
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(()=>{
@@ -51,7 +51,7 @@ function App() {
       payload: searchInput
     })
   }
-  
+
   return (
     <div className='container'>
         <AppContect.Provider value={state}>

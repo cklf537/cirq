@@ -5,7 +5,6 @@ import { AppContect } from '../../data/Context';
 const JobListing = () => {
 
     const {jobListings, filteredPosts} = useContext(AppContect);
-    console.log("filteredJobListing",filteredPosts)
     return (
         <div className="list-group">
             {

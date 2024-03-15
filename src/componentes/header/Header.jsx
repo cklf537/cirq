@@ -7,7 +7,6 @@ import {MainMenu} from '../../data/menu';
 
 const Header = () => {
     const [menu, setMenu] = useState(MainMenu);
-    console.log("Header")
     return (
         <section className="">
             <div className=" text-center">

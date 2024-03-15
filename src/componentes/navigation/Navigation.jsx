@@ -2,7 +2,6 @@ import React, {memo} from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navigation = memo((...props) => {
-    console.log("Component Navigation!");
     const [menu] = props;
     const mainMenu = menu.menu;
     return (
